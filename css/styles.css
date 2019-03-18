@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.question {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 4;
+}
+.question h1 {
+  font-size: 5em;
+  z-index: 4;
+  color: mediumseagreen;
+  text-align: center;
+}
+#wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.layer {
+  position: absolute;
+  width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.layer .content-wrap {
+  position: absolute;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.layer .content-body {
+  width: 20%;
+  position: absolute;
+  top: 40%;
+  text-align: center;
+  transform: translateY(-50%);
+  color: #fff;
+  z-index: 10;
+  font-size: 1.5rem;
+}
+
+.layer img {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.layer h2 {
+  font-size: 2em;
+  width: 150px;
+  height: 100px;
+}
+.content-body p {
+  padding: 50px;
+}
+
+.bottom {
+  z-index: 2;
+  width: 50vw;
+}
+
+.bottom .content-body {
+  left: 5%;
+}
+
+.layer h2 {
+  font-size: 2em;
+}
+
+.top {
+  z-index: 1;
+}
+
+.top .content-body {
+  right: 5%;
+}
+
+.top h2 {
+  color: red;
+}
+
+.handle {
+  position: absolute;
+  height: 100%;
+  display: block;
+  background: lightgrey;
+  width: 8px;
+  top: 0;
+  left: 50%;
+  z-index: 3;
+}
+
+.skewed .handle {
+  top: 50%;
+  transform: rotate(30deg) translateY(-50%);
+  height: 200%;
+  transform-origin: top;
+}
+
+.skewed .bottom {
+  transform: skew(-30deg);
+  margin-left: -1000px;
+  width: calc(50vw + 1000px);
+}
+
+.skewed .bottom .content-wrap {
+  transform: skew(30deg);
+  margin-left: 1000px;
+}
